@@ -30,7 +30,9 @@
     text-decoration: none;
     color: #fff;
 }
-
+.ham-icon{
+    display:none;
+}
 .introduction{
     display:flex;
     flex-direction: row;
@@ -191,7 +193,6 @@
     display:flex;
     justify-content: space-between;
     align-content: center;
-    align-content: center;
 }
 .contact .text h1{
     color: #fff;
@@ -220,4 +221,82 @@
 }
 .social-media a img{
     width: 30px; 
+    background:transparent;
+}
+
+@media screen and (max-width:600px) {
+
+    .nav-bar{
+        margin: 2rem;
+    }
+    .list-items{
+        display:none;
+    }
+    .ham-icon{
+        display: flex;
+        height:40px;
+        color: #fff;
+    }
+    .introduction{
+        flex-direction: column;
+        gap: 2rem;
+        align-items:center;
+        justify-content:center;
+    }
+    .intro-right{
+        width: 100%;
+        align-items: center;
+        padding:0;
+    }
+    .intro-right h3{
+        font-size: 3rem;
+    }
+    .skills{
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .skill-card{
+        width: 100%;
+    }
+    .experience{
+        margin: 2rem;
+        grid-template-columns: 1fr;
+        justify-content:center;
+    }
+    .experience .exp-card{
+        text-align: center;
+        width: 100%;
+    }
+    .project-heading{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .projects{
+        margin: 2rem;
+        grid-template-columns:1fr;
+    }
+    .contact{
+        margin: 4rem;
+        flex-direction:column;
+        gap: 2rem;
+    }
+    .contact .btn button{
+        padding: 1rem 2rem;
+    }
+    .footer{
+        flex-direction: column;
+        margin:2rem;
+        align-items: center;
+        justify-content:center;
+        gap: 4rem;
+    }
+    .social-media{
+        gap: 4rem;
+    }
+    .social-media a img{
+        background:#fff;
+    }
+    .footer-logo{
+        background:#fff;
+    }
 }
